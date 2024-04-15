@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from carla_msgs/msg/CarlaSynchronizationWindow.msg
+// generated code does not contain a copyright notice
+#pragma once
+
+module carla_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Copyright (c) 2024 Intel Corporation." "\n"
+      "" "\n"
+      "This work is licensed under the terms of the MIT license." "\n"
+      "For a copy, see <https://opensource.org/licenses/MIT>.")
+    struct CarlaSynchronizationWindow {
+      @verbatim (language="comment", text=
+        "if this value >0 carla is not increasing the simulation time above" "\n"
+        "synchronization_window_target_game_time" "\n"
+        "like this every control algorithm has the possibility to run in a synchronized manner" "\n"
+        "but is not restricted to pure single-stepping mode" "\n"
+        "if value <=0 synronization of this client is disabled")
+      float synchronization_window_target_game_time;
+    };
+  };
+};
