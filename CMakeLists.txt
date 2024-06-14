@@ -29,6 +29,9 @@ set(MSG_FILES
     CarlaTrafficLightStatus.msg
     CarlaTrafficLightStatusList.msg
     CarlaSynchronizationWindow.msg
+    CarlaV2XCustomData.msg
+    CarlaV2XCustomDataList.msg
+    CarlaV2XCustomMessage.msg
     CarlaWalkerControl.msg
     CarlaWeatherParameters.msg)
 
@@ -37,7 +40,7 @@ if(${ROS_VERSION} EQUAL 1)
 
   # Find catkin macros and libraries
   find_package(catkin REQUIRED COMPONENTS message_generation std_msgs
-                                          geometry_msgs diagnostic_msgs shape_msgs ackermann_msgs)
+                                          geometry_msgs diagnostic_msgs shape_msgs ackermann_msgs etsi_its_cam_msgs)
 
   add_service_files(DIRECTORY srv FILES ${SERVICE_FILES})
 
@@ -45,7 +48,7 @@ if(${ROS_VERSION} EQUAL 1)
 
   generate_messages(DEPENDENCIES std_msgs geometry_msgs diagnostic_msgs)
 
-  catkin_package(CATKIN_DEPENDS message_runtime std_msgs geometry_msgs diagnostic_msgs shape_msgs ackermann_msgs)
+  catkin_package(CATKIN_DEPENDS message_runtime std_msgs geometry_msgs diagnostic_msgs shape_msgs ackermann_msgs etsi_its_cam_msgs)
 
 elseif(${ROS_VERSION} EQUAL 2)
 
@@ -67,6 +70,7 @@ elseif(${ROS_VERSION} EQUAL 2)
   find_package(geometry_msgs REQUIRED)
   find_package(ackermann_msgs REQUIRED)
   find_package(diagnostic_msgs REQUIRED)
+  find_package(etsi_its_cam_msgs REQUIRED)
   find_package(rosidl_default_generators REQUIRED)
 
   # Apend "msg/" to each file name
@@ -94,6 +98,7 @@ elseif(${ROS_VERSION} EQUAL 2)
     geometry_msgs
     ackermann_msgs
     diagnostic_msgs
+    etsi_its_cam_msgs
     ADD_LINTER_TESTS)
 
   ament_export_dependencies(rosidl_default_runtime)
