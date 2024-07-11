@@ -1,23 +1,21 @@
 // generated from rosidl_adapter/resource/srv.idl.em
-// with input from carla_msgs/srv/GetBlueprints.srv
+// with input from carla_msgs/srv/GetAvailableMaps.srv
 // generated code does not contain a copyright notice
 #pragma once
 
 
-#include "carla_msgs/msg/CarlaActorBlueprint.idl"
-
 module carla_msgs {
   module srv {
     @verbatim (language="comment", text=
-      "Copyright (c) 2020 Intel Corporation." "\n"
+      "Copyright (c) 2024 Intel Corporation." "\n"
       "" "\n"
       "This work is licensed under the terms of the MIT license." "\n"
       "For a copy, see <https://opensource.org/licenses/MIT>.")
-    struct GetBlueprints_Request {
-      string filter;
+    struct GetAvailableMaps_Request {
+      uint8 structure_needs_at_least_one_member;
     };
-    struct GetBlueprints_Response {
-      sequence<carla_msgs::msg::CarlaActorBlueprint> blueprints;
+    struct GetAvailableMaps_Response {
+      sequence<string> maps;
     };
   };
 };

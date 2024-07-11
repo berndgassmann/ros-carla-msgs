@@ -1,0 +1,50 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from carla_msgs/srv/LoadMap.srv
+// generated code does not contain a copyright notice
+#pragma once
+
+module carla_msgs {
+  module srv {
+    module LoadMap_Request_Constants {
+      @verbatim (language="comment", text=
+        "These are the flags for the map layers to be loaded")
+      const uint16 MAPLAYERFLAG_NONE = 0;
+      const uint16 MAPLAYERFLAG_BUILDINGS = 1;
+      const uint16 MAPLAYERFLAG_DECALS = 2;
+      const uint16 MAPLAYERFLAG_FOLIAGE = 4;
+      const uint16 MAPLAYERFLAG_GROUND = 8;
+      const uint16 MAPLAYERFLAG_PARKEDVEHICLES = 16;
+      const uint16 MAPLAYERFLAG_PARTICLES = 32;
+      const uint16 MAPLAYERFLAG_PROPS = 64;
+      const uint16 MAPLAYERFLAG_STREETLIGHTS = 128;
+      const uint16 MAPLAYERFLAG_WALLS = 256;
+      const uint16 MAPLAYERFLAG_ALL = 65535;
+    };
+    @verbatim (language="comment", text=
+      "Copyright (c) 2020 Intel Corporation." "\n"
+      "" "\n"
+      "This work is licensed under the terms of the MIT license." "\n"
+      "For a copy, see <https://opensource.org/licenses/MIT>.")
+    struct LoadMap_Request {
+      string mapname;
+
+      @verbatim (language="comment", text=
+        "If the map was already loaded, per default nothing is done (resulting in a success=false response). By setting force_reload to \c True this behavior can be changed.")
+      @default (value=FALSE)
+      boolean force_reload;
+
+      @verbatim (language="comment", text=
+        "Should the episode settings be reset to the default")
+      @default (value=TRUE)
+      boolean reset_episode_settings;
+
+      @verbatim (language="comment", text=
+        "The map layers to be loaded, default is MAPLAYERFLAG_ALL")
+      @default (value=65535)
+      uint16 map_layers;
+    };
+    struct LoadMap_Response {
+      boolean success;
+    };
+  };
+};

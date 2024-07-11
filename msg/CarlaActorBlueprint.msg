@@ -1,9 +1,10 @@
 #
-# Copyright (c) 2020 Intel Corporation.
+# Copyright (c) 2024 Intel Corporation.
 #
 # This work is licensed under the terms of the MIT license.
 # For a copy, see <https://opensource.org/licenses/MIT>.
 #
-string filter
----
-carla_msgs/CarlaActorBlueprint[] blueprints
+
+string id
+string[] tags
+diagnostic_msgs/KeyValue[] attributes

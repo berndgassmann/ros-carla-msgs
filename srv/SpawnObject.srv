@@ -5,9 +5,7 @@
 # For a copy, see <https://opensource.org/licenses/MIT>.
 #
 
-string type
-string id
-diagnostic_msgs/KeyValue[] attributes
+carla_msgs/CarlaActorBlueprint blueprint
 geometry_msgs/Pose transform
 uint32 attach_to
 bool random_pose

@@ -1,0 +1,30 @@
+#
+# Copyright (c) 2020 Intel Corporation.
+#
+# This work is licensed under the terms of the MIT license.
+# For a copy, see <https://opensource.org/licenses/MIT>.
+#
+
+# These are the flags for the map layers to be loaded
+uint16 MAPLAYERFLAG_NONE            =  0
+uint16 MAPLAYERFLAG_BUILDINGS       =  1
+uint16 MAPLAYERFLAG_DECALS          =  2
+uint16 MAPLAYERFLAG_FOLIAGE         =  4
+uint16 MAPLAYERFLAG_GROUND          =  8
+uint16 MAPLAYERFLAG_PARKEDVEHICLES  =  16
+uint16 MAPLAYERFLAG_PARTICLES       =  32
+uint16 MAPLAYERFLAG_PROPS           =  64
+uint16 MAPLAYERFLAG_STREETLIGHTS    =  128
+uint16 MAPLAYERFLAG_WALLS           =  256
+uint16 MAPLAYERFLAG_ALL             =  65535
+
+string mapname
+# If the map was already loaded, per default nothing is done (resulting in a success=false response). By setting force_reload to \c True this behavior can be changed.
+bool force_reload    False
+# Should the episode settings be reset to the default
+bool reset_episode_settings  True
+# The map layers to be loaded, default is MAPLAYERFLAG_ALL
+uint16 map_layers  65535
+
+---
+bool success

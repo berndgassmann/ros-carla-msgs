@@ -9,20 +9,26 @@ if (NOT ROS_VERSION)
   return()
 endif()
 
-set(SERVICE_FILES SpawnObject.srv DestroyObject.srv GetBlueprints.srv)
+set(SERVICE_FILES
+    DestroyObject.srv
+    GetAvailableMaps.srv
+    GetBlueprints.srv
+    LoadMap.srv
+    SpawnObject.srv
+    )
 
 set(MSG_FILES
-    CarlaBoundingBox.msg
-    CarlaVehicleControl.msg
-    CarlaVehicleInfoWheel.msg
-    CarlaVehicleInfo.msg
-    CarlaVehicleStatus.msg
-    CarlaCollisionEvent.msg
-    CarlaLaneInvasionEvent.msg
-    CarlaWorldInfo.msg
+    CarlaActorBlueprint.msg
     CarlaActorInfo.msg
     CarlaActorList.msg
+    CarlaBoundingBox.msg
+    CarlaCollisionEvent.msg
     CarlaControl.msg
+    CarlaVehicleControl.msg
+    CarlaVehicleInfo.msg
+    CarlaVehicleInfoWheel.msg
+    CarlaVehicleStatus.msg
+    CarlaLaneInvasionEvent.msg
     CarlaStatus.msg
     CarlaTrafficLightInfo.msg
     CarlaTrafficLightInfoList.msg
@@ -33,7 +39,9 @@ set(MSG_FILES
     CarlaV2XCustomDataList.msg
     CarlaV2XCustomMessage.msg
     CarlaWalkerControl.msg
-    CarlaWeatherParameters.msg)
+    CarlaWeatherParameters.msg
+    CarlaWorldInfo.msg
+    )
 
 if(${ROS_VERSION} EQUAL 1)
   cmake_minimum_required(VERSION 2.8.3)
