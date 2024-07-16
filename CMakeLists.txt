@@ -54,7 +54,7 @@ if(${ROS_VERSION} EQUAL 1)
 
   add_message_files(DIRECTORY msg FILES ${MSG_FILES})
 
-  generate_messages(DEPENDENCIES std_msgs geometry_msgs diagnostic_msgs)
+  generate_messages(DEPENDENCIES std_msgs geometry_msgs diagnostic_msgs shape_msgs ackermann_msgs etsi_its_cam_msgs)
 
   catkin_package(CATKIN_DEPENDS message_runtime std_msgs geometry_msgs diagnostic_msgs shape_msgs ackermann_msgs etsi_its_cam_msgs)
 
