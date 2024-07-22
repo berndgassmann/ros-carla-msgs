@@ -37,6 +37,7 @@ set(MSG_FILES
     CarlaTrafficLightStatus.msg
     CarlaTrafficLightStatusList.msg
     CarlaSynchronizationWindow.msg
+    CarlaSynchronizationWindowParticipantState.msg
     CarlaV2XCustomData.msg
     CarlaV2XCustomDataList.msg
     CarlaV2XCustomMessage.msg

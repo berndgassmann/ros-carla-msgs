@@ -4,6 +4,7 @@
 #pragma once
 
 #include "carla_msgs/msg/CarlaEpisodeSettings.idl"
+#include "carla_msgs/msg/CarlaSynchronizationWindowParticipantState.idl"
 #include "std_msgs/msg/Header.idl"
 
 module carla_msgs {
@@ -16,11 +17,17 @@ module carla_msgs {
     struct CarlaStatus {
       std_msgs::msg::Header header;
 
+      carla_msgs::msg::CarlaEpisodeSettings episode_settings;
+
       @verbatim (language="comment", text=
         "frame number")
       uint64 frame;
 
-      carla_msgs::msg::CarlaEpisodeSettings episode_settings;
+      sequence<carla_msgs::msg::CarlaSynchronizationWindowParticipantState> synchronous_mode_participant_states;
+
+      @verbatim (language="comment", text=
+        "true: running, false: paused")
+      boolean synchronous_mode_running;
     };
   };
 };
