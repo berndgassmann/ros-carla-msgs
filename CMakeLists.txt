@@ -14,6 +14,7 @@ set(SERVICE_FILES
     GetAvailableMaps.srv
     GetBlueprints.srv
     LoadMap.srv
+    SetEpisodeSettings.srv
     SpawnObject.srv
     )
 
@@ -24,6 +25,7 @@ set(MSG_FILES
     CarlaBoundingBox.msg
     CarlaCollisionEvent.msg
     CarlaControl.msg
+    CarlaEpisodeSettings.msg
     CarlaVehicleControl.msg
     CarlaVehicleInfo.msg
     CarlaVehicleInfoWheel.msg

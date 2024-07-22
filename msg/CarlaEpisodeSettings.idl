@@ -1,0 +1,47 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from carla_msgs/msg/CarlaEpisodeSettings.msg
+// generated code does not contain a copyright notice
+#pragma once
+
+module carla_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Copyright (c) 2024 Intel Corporation." "\n"
+      "" "\n"
+      "This work is licensed under the terms of the MIT license." "\n"
+      "For a copy, see <https://opensource.org/licenses/MIT>.")
+    struct CarlaEpisodeSettings {
+      @default (value=FALSE)
+      boolean synchronous_mode;
+
+      @default (value=FALSE)
+      boolean no_rendering_mode;
+
+      float fixed_delta_seconds;
+
+      @default (value=TRUE)
+      boolean substepping;
+
+      @default (value=0.01)
+      float max_substep_delta_time;
+
+      @default (value=10)
+      int32 max_substeps;
+
+      @default (value=0.0)
+      float max_culling_distance;
+
+      @default (value=FALSE)
+      boolean deterministic_ragdolls;
+
+      @default (value=3000.0)
+      float tile_stream_distance;
+
+      @default (value=2000.0)
+      float actor_active_distance;
+
+      @default (value=TRUE)
+      boolean spectator_as_ego;
+    };
+  };
+};

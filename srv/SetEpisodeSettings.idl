@@ -1,26 +1,21 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from carla_msgs/msg/CarlaStatus.msg
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from carla_msgs/srv/SetEpisodeSettings.srv
 // generated code does not contain a copyright notice
-#pragma once
 
 #include "carla_msgs/msg/CarlaEpisodeSettings.idl"
-#include "std_msgs/msg/Header.idl"
 
 module carla_msgs {
-  module msg {
+  module srv {
     @verbatim (language="comment", text=
-      "Copyright (c) 2019 Intel Corporation." "\n"
+      "Copyright (c) 2020 Intel Corporation." "\n"
       "" "\n"
       "This work is licensed under the terms of the MIT license." "\n"
       "For a copy, see <https://opensource.org/licenses/MIT>.")
-    struct CarlaStatus {
-      std_msgs::msg::Header header;
-
-      @verbatim (language="comment", text=
-        "frame number")
-      uint64 frame;
-
+    struct SetEpisodeSettings_Request {
       carla_msgs::msg::CarlaEpisodeSettings episode_settings;
+    };
+    struct SetEpisodeSettings_Response {
+      boolean success;
     };
   };
 };
