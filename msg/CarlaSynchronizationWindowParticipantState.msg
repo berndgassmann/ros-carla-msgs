@@ -7,4 +7,4 @@
 
 string client_id
 uint32 participant_id
-float32 target_game_time
+float64 target_game_time

@@ -15,7 +15,7 @@ module carla_msgs {
 
       uint32 participant_id;
 
-      float target_game_time;
+      double target_game_time;
     };
   };
 };

@@ -17,13 +17,13 @@ module carla_msgs {
       @default (value=FALSE)
       boolean no_rendering_mode;
 
-      float fixed_delta_seconds;
+      double fixed_delta_seconds;
 
       @default (value=TRUE)
       boolean substepping;
 
       @default (value=0.01)
-      float max_substep_delta_time;
+      double max_substep_delta_time;
 
       @default (value=10)
       int32 max_substeps;

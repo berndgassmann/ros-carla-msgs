@@ -7,9 +7,9 @@
 
 bool synchronous_mode false
 bool no_rendering_mode false
-float32 fixed_delta_seconds
+float64 fixed_delta_seconds
 bool substepping true
-float32 max_substep_delta_time 0.01
+float64 max_substep_delta_time 0.01
 int32 max_substeps 10
 float32 max_culling_distance 0.0
 bool deterministic_ragdolls false

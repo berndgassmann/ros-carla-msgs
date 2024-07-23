@@ -12,5 +12,5 @@ carla_msgs/CarlaEpisodeSettings episode_settings
 uint64 frame                  # frame number
 
 carla_msgs/CarlaSynchronizationWindowParticipantState[] synchronous_mode_participant_states
-bool synchronous_mode_running # true: running, false: paused
+bool game_running # true: running, false: paused
 
