@@ -27,6 +27,10 @@ module carla_msgs {
     struct CarlaVehicleStatus {
       std_msgs::msg::Header header;
 
+      @verbatim (language="comment", text=
+        "Frame id the pose points to. The twist is in this coordinate frame.")
+      string child_frame_id;
+
       geometry_msgs::msg::Pose pose;
 
       geometry_msgs::msg::Twist twist;

@@ -6,6 +6,8 @@
 #
 
 std_msgs/Header header
+# Frame id the pose points to. The twist is in this coordinate frame.
+string child_frame_id
 
 geometry_msgs/Pose pose
 geometry_msgs/Twist twist

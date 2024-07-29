@@ -11,26 +11,26 @@ std_msgs/Header header
 # The CARLA vehicle control data
 
 # 0. <= throttle <= 1.
-float32 throttle
+float32 throttle 0.
 
 # -1. <= steer <= 1.
-float32 steer
+float32 steer 0.
 
 # 0. <= brake <= 1.
-float32 brake
+float32 brake 0.
 
 # hand_brake 0 or 1
-bool hand_brake
+bool hand_brake 0
 
 # reverse 0 or 1
-bool reverse
+bool reverse 0
 
 # gear
-int32 gear
+int32 gear 0
 
 # manual gear shift
-bool manual_gear_shift
+bool manual_gear_shift 0
 
 # 4 <= control_priority <= 255
 # higher numbers of control input override lower ones
-uint8 control_priority
+uint8 control_priority 4
