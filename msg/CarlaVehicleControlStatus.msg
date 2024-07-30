@@ -5,17 +5,6 @@
 # For a copy, see <https://opensource.org/licenses/MIT>.
 #
 
-std_msgs/Header header
-# Frame id the pose points to. The twist is in this coordinate frame.
-string child_frame_id
-
-geometry_msgs/Pose pose
-geometry_msgs/Twist twist
-# the pure signed speed value of the vehicle
-float32 velocity
-geometry_msgs/Accel acceleration
-geometry_msgs/Quaternion orientation
-
 # last applied control values
 uint8 VEHICLE_CONTROL=0
 uint8 ACKERMANN_CONTROL=1

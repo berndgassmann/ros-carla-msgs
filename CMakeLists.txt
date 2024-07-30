@@ -29,7 +29,7 @@ set(MSG_FILES
     CarlaVehicleControl.msg
     CarlaVehicleInfo.msg
     CarlaVehicleInfoWheel.msg
-    CarlaVehicleStatus.msg
+    CarlaVehicleControlStatus.msg
     CarlaLaneInvasionEvent.msg
     CarlaStatus.msg
     CarlaTrafficLightInfo.msg
