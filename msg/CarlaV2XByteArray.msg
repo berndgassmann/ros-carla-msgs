@@ -5,6 +5,6 @@
 # For a copy, see <https://opensource.org/licenses/MIT>.
 #
 
-etsi_its_cam_msgs/ItsPduHeader header
-carla_msgs/CarlaV2XByteArray data
+uint8 data_size
+byte[100] bytes
 
