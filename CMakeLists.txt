@@ -42,6 +42,8 @@ set(MSG_FILES
     CarlaV2XCustomData.msg
     CarlaV2XCustomDataList.msg
     CarlaV2XCustomMessage.msg
+    CarlaV2XData.msg
+    CarlaV2XDataList.msg
     CarlaWalkerControl.msg
     CarlaWeatherParameters.msg
     CarlaWorldInfo.msg
